@@ -1,16 +1,16 @@
+import styles from './header.module.sass'
 import logo from '../../logo.png'
 import NavItem from '../NavItem/NavItem'
 import Button from '../UI/Button/Button'
-import styles from './header.module.sass'
 
 function Header({ onVisible }) {
   return (
     <header className={styles.header}>
       <a href="#">
-        <img src={logo} alt="logo" className="img" />
+        <img src={logo} alt="logo" className={styles.img} />
       </a>
 
-      <nav className="nav">
+      <nav>
         <NavItem text="Page-1" />
         <NavItem text="Page-2" />
         <NavItem text="Page-3" />

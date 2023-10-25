@@ -5,14 +5,15 @@ import LIST from './dataItems'
 import { useState } from 'react'
 
 function App() {
-  const [listItems, setListItems] = useState(LIST)
+  const [listItems, setListItems] = useState(LIST) // temporarily
   const [isAuthorizationVisible, setIsAuthorizationVisible] = useState(false)
-  
+
   const handleVisibleonVisible = boolean => setIsAuthorizationVisible(boolean)
 
   return (
     <div className="App">
       <Header onVisible={handleVisibleonVisible} />
+      <h1 className="title">Main page</h1> {/* temporarily */}
       {isAuthorizationVisible && <Authorization onVisible={handleVisibleonVisible} />}
       <Products listItems={listItems} />
     </div>

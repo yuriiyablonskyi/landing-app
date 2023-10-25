@@ -1,14 +1,16 @@
+import styles from './authorization.module.sass'
 import Input from '../UI/Input/Input'
+import Button from '../UI/Button/Button'
 
 function Authorization({ onVisible }) {
   return (
-    <div className="authorization">
-      <form className="authorization__form">
+    <div className={styles.authorization}>
+      <form className={styles.form}>
         <Input type="text" placeholder="username" />
         <Input type="password" placeholder="password" />
-        <button className="btn" type="submit" id="close">SIGN IN</button>
+        <Button text="SIGN IN" />
       </form>
-      <button onClick={() => onVisible(false)} className='authorization__close'>&#10006;</button>
+      <button onClick={() => onVisible(false)} className={styles.btn}>&#10006;</button>
     </div>
   )
 }
