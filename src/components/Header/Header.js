@@ -1,9 +1,9 @@
-import styles from './header.module.sass'
+import styles from './Header.module.sass'
 import logo from '../../logo.png'
-import NavItem from '../NavItem/NavItem'
-import Button from '../UI/Button/Button'
+import NavItem from '../navItem/NavItem'
+import Button from '../UI/button/Button'
 
-function Header({ onVisible }) {
+const Header = ({ onVisible }) => {
   return (
     <header className={styles.header}>
       <a href="#">

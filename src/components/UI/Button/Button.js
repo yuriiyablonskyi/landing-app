@@ -1,9 +1,5 @@
-import styles from './button.module.sass'
+import styles from './Button.module.sass'
 
-function Button({ text, onVisible }) {
-  return (
-    <button className={styles.btn} onClick={() => onVisible(true)}>{text}</button>
-  )
-}
+const Button = ({ text, onVisible }) => <button className={styles.btn} onClick={() => onVisible(true)}>{text}</button>
 
 export default Button

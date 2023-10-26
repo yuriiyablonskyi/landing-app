@@ -1,6 +1,6 @@
-import styles from './productsItem.module.sass'
+import styles from './ProductsItem.module.sass'
 
-function ProductsItem({ title, description, src }) {
+const ProductsItem = ({ title, description, src }) => {
   return (
     <div className={styles.item}>
       <img className={styles.img} src={src} alt="cat" />

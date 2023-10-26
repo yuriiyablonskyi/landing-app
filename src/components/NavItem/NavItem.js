@@ -1,6 +1,6 @@
-import styles from './navItem.module.sass'
+import styles from './NavItem.module.sass'
 
-function NavItem({ text }) {
+const NavItem = ({ text }) => {
   return (
     <a className={styles.item} href="#">{text}</a>
   )

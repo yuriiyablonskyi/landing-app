@@ -1,20 +1,20 @@
-import Header from './components/Header/Header'
-import Authorization from './components/Authorization/Authorization'
-import Products from './components/Products/Products'
+import Header from './components/header/Header'
+import Auth from './pages/auth/Auth'
+import Products from './components/products/Products'
 import LIST from './dataItems'
 import { useState } from 'react'
 
-function App() {
+const App = () => {
   const [listItems, setListItems] = useState(LIST) // temporarily
-  const [isAuthorizationVisible, setIsAuthorizationVisible] = useState(false)
+  const [isAuthVisible, setIsAuthVisible] = useState(false)
 
-  const handleVisibleonVisible = boolean => setIsAuthorizationVisible(boolean)
+  const handleVisible = boolean => setIsAuthVisible(boolean)
 
   return (
     <div className="App">
-      <Header onVisible={handleVisibleonVisible} />
+      <Header onVisible={handleVisible} />
       <h1 className="title">Main page</h1> {/* temporarily */}
-      {isAuthorizationVisible && <Authorization onVisible={handleVisibleonVisible} />}
+      {isAuthVisible && <Auth onVisible={handleVisible} />}
       <Products listItems={listItems} />
     </div>
   )

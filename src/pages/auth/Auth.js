@@ -1,8 +1,8 @@
-import styles from './authorization.module.sass'
-import Input from '../UI/Input/Input'
-import Button from '../UI/Button/Button'
+import styles from './Auth.module.sass'
+import Input from '../../components/UI/input/Input'
+import Button from '../../components/UI/button/Button'
 
-function Authorization({ onVisible }) {
+const Authorization = ({ onVisible }) => {
   return (
     <div className={styles.authorization}>
       <form className={styles.form}>

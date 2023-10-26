@@ -1,6 +1,6 @@
-import styles from './toggle.module.sass'
+import styles from './Toggle.module.sass'
 
-function Toggle() {
+const Toggle = () => {
   return (
     <div className={styles.toggle}>
       <div className={styles.item}></div>

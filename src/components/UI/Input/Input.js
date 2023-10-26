@@ -1,6 +1,6 @@
-import styles from './input.module.sass'
+import styles from './Input.module.sass'
 
-function Input({ type, placeholder }) {
+const Input = ({ type, placeholder }) => {
   return (
     <input className={styles.input} type={type} placeholder={placeholder} />
   )
